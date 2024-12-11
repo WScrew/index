@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html lang="pl">
     <head>
-        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html"; charset="utf-8">
         <title>Formularz Korol</title>
+	
     </head>
 
-    <body>
-        <p>Tutaj będzie formularz</p>
+    <body style="background-color: #cccc33;">
+        <form action="mailto:dancer@op.pl" method="post" enctype="text/plain"><div>
+<p>1. Podaj adres e-mail:</p>
+<form action="/submit-form" method="post">
+    <label for="email">E-mail:</label>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="email" id="email" name="email" required><br><br>
+	<label for="name">Imię:</label>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="name" name="Imię" required><br><br>
+    <label for="subname">Nazwisko:</label>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="subname" id="subname" name="nazwisko" required><br>
+</form>
+
+<p>2. Czy jesteś dorosły:</p>
+<input type="radio" name="Czy jesteś dorosły" value="nie chcę mówić" checked>nie chcę mówić&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="radio" name="Czy jesteś dorosły" value="tak">tak&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="radio" name="Czy jesteś dorosły" value="nie">nie&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="radio" name="Czy jesteś dorosły" value="nie wiem">nie wiem&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<p>Jeśli tak to wybierz</p>
+<select name="Wiek">
+	<option checked> </option>
+	<option >18-23</option>
+	<option>24-29</option>
+	<option>30-35</option>
+    <option>36-41</option>
+	<option>42-47</option>
+	<option>48-53</option>
+	<option>54-59</option>
+	<option>60-65</option>
+	<option>Więcej niż 65</option>
+</select>
+
+<p>3. Ile razy byłeś/aś u nas?</p>
+<input type="radio" name="Ile razy byłeś/aś u nas" value="1">1<br>
+<input type="radio" name="Ile razy byłeś/aś u nas" value="2-9">kilka 2-9<br>
+<input type="radio" name="Ile razy byłeś/aś u nas" value="10-19">kilkanaście 10-19<br>
+<input type="radio" name="Ile razy byłeś/aś u nas" value="więcej niż 20">więcej niż 20<br>
+
+<p>4. Na ile * oceniasz obsługę:</p>
+<input type="radio" name="Na ile * oceniasz obsługę" value="0" checked>0
+<input type="radio" name="Na ile * oceniasz obsługę" value="1">1
+<input type="radio" name="Na ile * oceniasz obsługę" value="2">2
+<input type="radio" name="Na ile * oceniasz obsługę" value="3">3
+<input type="radio" name="Na ile * oceniasz obsługę" value="4">4
+<input type="radio" name="Na ile * oceniasz obsługę" value="5">5
+
+<p>5. Jakie elementy wnetrz podobają ci się?</p>
+<input type="checkbox" name="wystrój" value="Własna">Własna:
+<input type="text" name="wystrój" size="60" maxlength="50" placeholder="Max 50 słów"/><br>
+<input type="checkbox" name="wystrój" value="jest idealnie">jest idealnie
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="wystrój" value="średnio">średnio<br>
+<input type="checkbox" name="wystrój" value="bardzo">bardzo
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="wystrój" value="nie">nie<br>
+<input type="checkbox" name="wystrój" value="dobrze">dobrze
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="wystrój" value="brak zdania" checked>brak zdania<br>
+
+<p>6. Jakie jedzenie z naszej oferty najbardziej lubisz?</p>
+<input type="checkbox" name="jedzenie" value="nie wiem" checked>nie wiem&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="checkbox" name="jedzenie" value="zupy">zupy&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="checkbox" name="jedzenie" value="desery">desery&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="checkbox" name="jedzenie" value="przystawki">przystawki&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="checkbox" name="jedzenie" value="dania główne">dania główne&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="checkbox" name="jedzenie" value="wszystko">wszystko&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<p>Czy chcesz stworzyć konto?</p>
+<select name="konto">
+	<option selected>nie</option>
+	<option>tak</option>
+</select>
+
+<label>Jeśli tak podaj:</label> <input type="password" name="password" placeholder="hasło"/>
+
+<p>Podaj co możemy zmienić:</p>
+<textarea name="Komentarz" cols="50" rows="10" placeholder="(Opcjonalne)"></textarea>
+
+<br><br><br>
+
+
+<input type="submit" value="Wyślij">
+
+<input type="reset" value="Czyść">
+</div></form>
         <a href="./index.html">wróć</a>
 
     </body>
